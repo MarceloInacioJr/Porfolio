@@ -1,0 +1,90 @@
+/* main */
+
+#main {
+    height: auto;
+    min-height: 50vh;
+}
+
+
+/* about me */
+#about-me {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+
+}
+
+
+#figure-aboutme {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#figure{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 40% 50% 30% 50%;
+    background:radial-gradient( rgb(4, 122, 219), blue) ;
+    transform: rotate(10deg);
+}
+
+#content-aboutme {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+}
+
+
+
+
+@media (max-width:1200px) {
+
+    /* about-me */
+    #about-me {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #figure-aboutme {
+        height: 40%;
+        width: 100%
+    }
+
+    #figure{ 
+            height: 15rem;
+            width: 15rem;
+    }
+
+    #content-aboutme {
+        height: 60%;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: start;
+        padding: 20px;
+        text-align: justify;
+        
+    }
+
+    #title-aboutme{
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    #description-aboutme{
+        margin: 20% auto;
+        font-size: 1.3rem;
+        color: #ccc;
+    }   
+}

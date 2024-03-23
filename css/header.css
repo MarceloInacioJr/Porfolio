@@ -4,6 +4,7 @@ html {
    font-family: 'Roboto';
    background-color: #0F0F17;
    overflow-x: hidden;
+   scroll-behavior: smooth;
 }
 
 
