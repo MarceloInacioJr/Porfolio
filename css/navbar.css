@@ -5,12 +5,13 @@
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  background-color: #0f0f1700;
+  background-color: #0f0f17;
   backdrop-filter:  blur(20px) ;
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(to right, #0038FF, #0124a3);
   border-image-slice: 1;
   position: fixed;
+  z-index: 1;
 
 }
 
@@ -31,7 +32,6 @@
 /* nav button menu */
 
 #nav-menu {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,6 +128,7 @@
   border-left: 3px solid #0038FF;
   margin-right: -20vw ;
   transition: .5s ease-out;
+  z-index: 1;
 }
 
 .bar-active{
