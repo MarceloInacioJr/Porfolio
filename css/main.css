@@ -26,8 +26,8 @@
 
 
 #figure{
-    height: 20rem;
-    width: 20rem;
+    height: 25rem;
+    width: 25rem;
     border-radius: 40% 50% 30% 50%;
     background:radial-gradient( rgb(4, 122, 219), blue) ;
     transform: rotate(10deg);
@@ -40,8 +40,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    padding: 20px;
+    padding: 30px;
+    color: #ccc;
+
 }
+
+#title-aboutme{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: -5rem;
+    margin-bottom: 4rem;
+}
+
+#description-aboutme{
+    font-size: 1.3rem;
+    color: #ccc;
+    text-align: justify;    
+    line-height: 1.8rem;
+    padding: 0 10rem;
+}   
 
 
 
@@ -71,20 +89,21 @@
         width: 100%;
         box-sizing: border-box;
         justify-content: start;
-        padding: 20px;
+        padding: 0 25px;
+        margin: 20% auto;
         text-align: justify;
+
         
     }
 
     #title-aboutme{
         font-size: 30px;
-        font-weight: bold;
-        color: #fff;
+        
     }
 
     #description-aboutme{
-        margin: 20% auto;
-        font-size: 1.3rem;
-        color: #ccc;
+       
+        font-size: 1.6rem;
+        
     }   
 }
