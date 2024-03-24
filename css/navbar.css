@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #0f0f17;
-  backdrop-filter:  blur(20px) ;
+  backdrop-filter: blur(20px);
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(to right, #0038FF, #0124a3);
   border-image-slice: 1;
@@ -42,7 +42,7 @@
 
 #checkbox {
   display: none;
-  
+
 }
 
 .label-menu {
@@ -126,12 +126,12 @@
   box-sizing: border-box;
   border-bottom: 3px solid #13276f;
   border-left: 3px solid #0038FF;
-  margin-right: -20vw ;
+  margin-right: -20vw;
   transition: .5s ease-out;
   z-index: 1;
 }
 
-.bar-active{
+.bar-active {
   margin-right: 0px !important;
 }
 
@@ -158,7 +158,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 45px;
   font-size: 20px;
 }
 
@@ -169,7 +169,7 @@
   transition: .5s;
 }
 
-#menu-links a:hover{
+#menu-links a:hover {
   font-size: 30px;
   color: aliceblue;
 }
@@ -182,7 +182,7 @@
 
   /* bar menu */
   #bar-menu {
-    height: 50%;
+    height: 60%;
     width: 70%;
     margin-right: -70%;
   }
