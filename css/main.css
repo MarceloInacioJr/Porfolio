@@ -70,7 +70,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
     }
 
     #skills-cards {
@@ -172,7 +172,7 @@
 
     #ball2 {
         margin-top: 1%;
-        margin-left:-5% ;
+        margin-left: -5%;
         height: 70%;
         width: 40%;
         background-color: #0032e7;
@@ -186,7 +186,7 @@
         width: 30%;
         background-color: #0032e7;
         border-radius: 100%;
-    
+
     }
 
     .training-description {
@@ -313,20 +313,20 @@
 
 
     /* projects */
-    #projects{
+    #projects {
         margin-top: 5%;
         padding-top: 8%;
-        height: auto;     
+        height: auto;
         width: 100vw;
-        background-color: rgb(236, 0, 0) ;
+        /* background-color: rgb(236, 0, 0); */
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
 
-    #projects-container{
-        background-color: #0032e7;
+    #projects-container {
+        /* background-color: #0032e7; */
         height: 90vh;
         width: 95%;
         padding-top: 5%;
@@ -337,84 +337,150 @@
         gap: 2%;
     }
 
-    .project{
-        height: 45%;
-        width: 30%;
-        background-color: #e700df;
-        position: relative;
-        background-size: cover;
-        cursor: pointer;
-        transition:all .5s;
-        
+
+    .project {
+        width: 490px;
+        height: 284px;
+        transition: all 0.4s;
+        font-size: 30px;
+        margin: 0;
     }
 
-    .project:hover {
-        transform: scale(1.3);
-        z-index: 3;
-    }
-    
-    .project-cover-content{
-        position: absolute;
-        background-color: #0000006e;
+    .project-cover {
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
         height: 100%;
         width: 100%;
-        overflow: hidden;
+        transition: all 0.4s;
+        opacity: 1;
+    }
+
+    .project-cover .project-cover-content {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.74);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        color: aliceblue;
         align-items: center;
-        color: #fff;
-        z-index: 2;
+        justify-content: center;
+        gap: 30px;
+
     }
 
-    .project:hover .project-cover-content {
+    .project-cover img {
+        box-sizing: border-box;
+        max-height: 90%;
+        max-width: 100%
+    }
+
+
+    .project:hover {
+
+        cursor: pointer;
+        transform: scale(1.2);
+        background-color: transparent;
+        transform: scale(1.3);
+    }
+
+
+    .project-cover-title {
+        font-weight: 900;
+        font-size: 30px;
+        margin-bottom: 1px;
+    }
+
+    .project-cover-description {
+        font-size: 20px;
+        text-align: justify;
+        padding: 0 60px;
+
+    }
+
+    .project:hover .project-cover {
         height: 0px;
         opacity: 0;
-        
     }
 
-    .background-cover img{
-        max-height: 100%;
-        max-width: 100%;
-        width: 100%;
-        box-sizing: border-box;
-        position: absolute;
-    }
-
-    .project:hover .background-cover img{
-        opacity: 0;
-    }
-
-    .project-video { 
+    .video-content {
         height: 0%;
+        max-height: 100% ;
         width: 100%;
         opacity: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all .4s;
-        font-size: 0;
-        transform: rotate(180deg) scale(-1);
+        transition: all 0.4s;
+        font-size: 0px;
+        /* transform: rotate(90deg) scale(0); */
+        box-sizing: border-box;
+
     }
 
-    .project-video video{
+    .video-content video {
         height: 100%;
         width: 100%;
-        border: 1px solid red   ;
+        border-radius: 15px 15px 0 0 ;
+        margin: 0;
     }
 
-    .project:hover .project-video{
+    .project:hover .video-content {
         opacity: 1;
         height: 100%;
-        width: 100%;
         font-size: 1.8rem;
         transform: rotate(0deg);
     }
+
+    .border-github {
+        height: 5px;
+        background: linear-gradient(to right, blue, rgba(0, 166, 255, 0.721), rgb(3, 235, 247));
+        border-radius: 0 0 10px 10px;
+        transition: .7s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project:hover .border-github {
+        height: 40px;
+    }
+
+
+    .button-github a {
+        opacity: 0;
+        height: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 10px 10px;
     
 
+    }
+    
+    .button-github a img{
+        height: 30px;   
+        width: 30px;
+    }
+    .project:hover .button-github a {
+        width: 100%;
+        height: 100%; 
+        opacity: 1;
+        text-decoration: none;
+        color: #fff;
+   
+
+    }
 
 
-/* mobile */
+
+    /* mobile */
     @media (max-width:1200px) {
 
         /* about-me */
@@ -511,12 +577,12 @@
             font-size: 16px;
         }
 
-        .book-img{
+        .book-img {
             height: 40%;
             width: 100%;
         }
 
-        .book-img img{
+        .book-img img {
             height: 150px;
             width: 230px;
 
@@ -544,53 +610,53 @@
             font-size: px;
         }
 
-        
-    #ball1 {
-        margin-top: 10rem;
-        height: 30rem;
-        width: 40rem;
-        background-color: #0032e7;
-        border-radius: 100%;
-        margin-left: -20rem;
-    }
 
-    #ball2 {
-        margin-top: 25rem;
-        
-        height: 1rem;
-        width: 1rem;
-        background-color: #0032e7;
-        border-radius: 100%;
-        position: absolute;
-    }
+        #ball1 {
+            margin-top: 10rem;
+            height: 30rem;
+            width: 40rem;
+            background-color: #0032e7;
+            border-radius: 100%;
+            margin-left: -20rem;
+        }
 
-    #ball3 {
-        margin-top: 50rem;
-        margin-left: -30rem;
-        height: 20rem;
-        width: 25rem;
-        background-color: #0032e7;    
-    }
+        #ball2 {
+            margin-top: 25rem;
 
-    /* project */
-    #projects{
-        margin-top: 100vh;
-    }
+            height: 1rem;
+            width: 1rem;
+            background-color: #0032e7;
+            border-radius: 100%;
+            position: absolute;
+        }
 
-    #projects-container{
-       
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
+        #ball3 {
+            margin-top: 50rem;
+            margin-left: -30rem;
+            height: 20rem;
+            width: 25rem;
+            background-color: #0032e7;
+        }
 
-    .project{
-        height: 12rem;
-        width: 30%;
-        width: auto;
-        background-color: #00e723;
-    
-    }
-    
+        /* project */
+        #projects {
+            margin-top: 100vh;
+        }
+
+        #projects-container {
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .project {
+            height: 12rem;
+            width: 30%;
+            width: auto;
+            background-color: #00e723;
+
+        }
+
 
     }
