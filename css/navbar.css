@@ -11,7 +11,7 @@
   border-image: linear-gradient(to right, #0038FF, #0124a3);
   border-image-slice: 1;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
 
 }
 
@@ -128,7 +128,7 @@
   border-left: 3px solid #0038FF;
   margin-right: -20vw;
   transition: .5s ease-out;
-  z-index: 1;
+  z-index: 10;
 }
 
 .bar-active {
