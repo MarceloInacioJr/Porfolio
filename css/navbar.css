@@ -117,7 +117,6 @@
   position: fixed;
   top: 75px;
   right: 0;
-  height: 60vh;
   width: 20vw;
   background-color: rgba(16, 23, 44, 0.825);
   backdrop-filter: blur(6px);
@@ -153,7 +152,7 @@
 }
 
 #menu-links {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,15 +181,23 @@
 
   /* bar menu */
   #bar-menu {
-    height: 60%;
+    height: auto;
+    padding: 30px 0;
     width: 70%;
     margin-right: -70%;
+    
   }
 
+  
+#menu-links {
+  margin-top: 20px;
+}
 
   .title-bar-menu hr {
     width: 40vw;
   }
+
+  
 
 
 }
