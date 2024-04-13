@@ -10,12 +10,17 @@ function isVisible (element){
 }
 
 function loading(element){
+
     if (isVisible(element)){
         element.classList.add('visible-content')
-        console.log('activate')
+        if(element=='#contact'){
+            console.log('conatatos')
+        }else{
+            console.log('NAO conatatos')
+        }
     }else{
         element.classList.remove('visible-content')
-        console.log('desactive')
+        
     }
     
 }
@@ -25,13 +30,13 @@ window.addEventListener('scroll',()=>{
     let skills = document.querySelector('#skills')
     let training = document.querySelector('#training')
     let projects = document.querySelector('#projects')
-    let contact = document.querySelector('#contact')
+    let contacts = document.querySelector('#contacts')
 
     loading(aboutme)
     loading(skills)
     loading(training)
     loading(projects)
-    loading(contact)
+    loading(contacts)
 
 })
 
