@@ -1,8 +1,8 @@
     /* main */
 
     ::-webkit-scrollbar{
-        width: 16px;
-        border: 1px solid rgb(0, 0, 133);
+        width: 12px;
+        border: 1px solid rgb(2, 2, 91);
         border-radius: 10px;
     }
 
@@ -410,7 +410,7 @@
         color: aliceblue;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 25px;
 
     }
 
@@ -422,8 +422,10 @@
 
     .project-cover-description {
         font-size: 20px;
+        line-height: 25px;
         text-align: justify;
         padding: 0 60px;
+        color: #989797;
 
     }
 
@@ -438,11 +440,23 @@
         max-width: 100%
     }
 
+    .project-cover-icons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 0 10px;
+    }
+
+    .project-cover-icons img{
+        height: 35px;
+    }
 
     .project:hover {
 
         cursor: pointer;
-        transform: scale(1.2);
+        transform: scale(1.1);
         background-color: transparent;
         
     }
