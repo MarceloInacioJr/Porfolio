@@ -1,0 +1,31 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "nameProject": "Grocery List",
+            "descriptionProject": "O Grocery List é um site responsivo que permite criar listas de compras, inserindo nome, quantidade e valor dos itens, e acompanhar o valor total em tempo real, além de marcar itens como comprados.",
+            "imageUrl": "assets/main/icon-projects-video/project-image/grocerylist.png",
+            "iconUrls": ["iconHTML", "iconCSS", "iconJS", "iconREACT", "iconFIREBASE"],
+            "videoUrl": "assets/main/icon-projects-video/project-video/grocerylist.mp4",
+            "urlGithub": "https://github.com/MarceloInacioJr/Grocery-list"
+        },
+        {
+            "id": 3,
+            "nameProject": "To do list",
+            "descriptionProject": "O Todo List é uma ferramenta de gerenciamento de tarefas que organiza atividades por dias e horários. As cores indicam o status das tarefas: verde para em execução, cinza para pendentes e vermelho para concluídas.",
+            "imageUrl": "assets/main/icon-projects-video/project-image/todolist.png",
+            "iconUrls": ["iconHTML", "iconCSS", "iconJS", "iconFIREBASE"],
+            "videoUrl": "assets/main/icon-projects-video/project-video/todolist.mp4",
+            "urlGithub": "https://github.com/MarceloInacioJr/To-do-List"
+        },
+        {
+            "id": 2,
+            "nameProject": "Films",
+            "descriptionProject": "PROJETO EM DESENVOLVIMENTO",
+            "imageUrl": "assets/main/icon-projects-video/project-image/films.png",
+            "iconUrls": ["iconHTML", "iconCSS", "iconJS", "iconREACT"],
+            "videoUrl": "assets/main/icon-projects-video/project-video/movies.mp4",
+            "urlGithub": "https://github.com/MarceloInacioJr/Films"
+        }
+    ]
+}
