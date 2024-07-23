@@ -7,6 +7,7 @@
             "imageUrl": "assets/main/icon-projects-video/project-image/grocerylist.png",
             "iconUrls": ["iconHTML", "iconCSS", "iconJS", "iconREACT", "iconFIREBASE"],
             "videoUrl": "assets/main/icon-projects-video/project-video/grocerylist.mp4",
+            "videoUrlMobile":"assets/main/icon-projects-video/project-video/project-video-mobile/grocerylist.mp4",
             "urlGithub": "https://github.com/MarceloInacioJr/Grocery-list"
         },
         {
@@ -16,15 +17,17 @@
             "imageUrl": "assets/main/icon-projects-video/project-image/todolist.png",
             "iconUrls": ["iconHTML", "iconCSS", "iconJS", "iconFIREBASE"],
             "videoUrl": "assets/main/icon-projects-video/project-video/todolist.mp4",
+            "videoUrlMobile":"",
             "urlGithub": "https://github.com/MarceloInacioJr/To-do-List"
         },
         {
             "id": 2,
-            "nameProject": "Films",
-            "descriptionProject": "PROJETO EM DESENVOLVIMENTO",
-            "imageUrl": "assets/main/icon-projects-video/project-image/films.png",
+            "nameProject": "Movies",
+            "descriptionProject": "Movie é uma plataforma com o objetivo de informar as pessoas sobre algumas características de determinados filmes, como a descrição, avaliação, gênero, etc.",
+            "imageUrl": "assets/main/icon-projects-video/project-image/movies.png",
             "iconUrls": ["iconHTML", "iconCSS", "iconJS", "iconREACT"],
             "videoUrl": "assets/main/icon-projects-video/project-video/movies.mp4",
+            "videoUrlMobile":"assets/main/icon-projects-video/project-video/project-video-mobile/movies.mp4",
             "urlGithub": "https://github.com/MarceloInacioJr/Films"
         }
     ]
